@@ -91,4 +91,13 @@ public class JDBCTelefonoDAO extends JDBCGenericDAO<Telefono, Integer> implement
         }
         return telefonos;
     }
+
+	@Override
+	public List<Telefono> findByNumber(String numero, String cedula) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
 }

@@ -15,9 +15,9 @@ import java.sql.Statement;
 public class ContextJDBC {
 
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://localhost:3306/db_bookcontact?serverTimezone=UTC";
+    private static final String URL = "jdbc:mysql://localhost:3306/agenda?serverTimezone=UTC";
     private static final String USER = "root";
-    private static final String PASS = "20CXRZgwzz17";
+    private static final String PASS = "cuenca";
     private static ContextJDBC jdbc1 = null;
     private static ContextJDBC jdbc2 = null;
     private Statement statement = null;

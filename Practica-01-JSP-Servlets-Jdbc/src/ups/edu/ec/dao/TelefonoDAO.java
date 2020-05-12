@@ -10,6 +10,9 @@ import ups.edu.ec.modelo.Telefono;
 import java.util.List;
 
 
+
+
 public interface TelefonoDAO extends GenericDAO<Telefono, Integer>{
-    public abstract List<Telefono> findByUserId(String cedula);
+	 public abstract List<Telefono> findByUserId(String cedula);
+	    public abstract List<Telefono> findByNumber(String numero, String cedula);
 }
