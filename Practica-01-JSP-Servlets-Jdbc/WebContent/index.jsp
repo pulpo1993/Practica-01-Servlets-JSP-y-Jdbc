@@ -13,7 +13,7 @@
         <c:set var = "userId" value = "${sessionScope['userID']}" />
 			<div class="uno">            
                   
-       			 <h1>TU AGENDA TELEFONICA </h1>                    
+       			 <h1>AGENDA TELEFONICA </h1>                    
     		</div>
       		
       			
