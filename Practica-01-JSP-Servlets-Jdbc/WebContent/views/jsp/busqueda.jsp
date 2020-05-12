@@ -15,7 +15,7 @@
         <script src="https://kit.fontawesome.com/e564244708.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="public/css/styles.css">
+        <link rel="stylesheet" href="diseño/css/styles.css">
     </head>
     <body>
         <c:set var = "users" value = "${requestScope['users']}" />
@@ -23,7 +23,7 @@
         <div class="ui container">
             <div class="ui secondary  menu">
                 <div class="item logo">
-                    <a href="/Practica-de-laboratorio-01"><h2><span>Book</span>Contact</h2></a>
+                    <a href="/Practica-de-laboratorio-01"><h2><span>Agenda</span>Telefonica</h2></a>
                 </div>
 
                 <div class="right menu">
@@ -129,20 +129,10 @@
             </c:choose>
         </div>
         <footer>
-            <div class="icon_footer">
-                <i class="fas fa-chevron-up"></i>
-            </div>
-            <div class="social_foote">
-                <a href="https://www.instagram.com/claudio.mldo" target="_BLANK"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/Claudio.Mldo" target="_BLANK"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://github.com/MClaudio" target="_BLANK"><i class="fab fa-github-square"></i></a>
-            </div>
-            <p>&COPY; 2020 Todos los derechos reservados | Designed By Claudio Maldonado</p>
+            
+            <p>&COPY; 2020 Todos los derechos reservados | Designed By Marcelo Durazno</p>
         </footer>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        
     </body>
 </html>

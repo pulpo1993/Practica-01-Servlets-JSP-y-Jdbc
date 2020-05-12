@@ -14,8 +14,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/e564244708.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="public/css/styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="diseño/css/styles.css">
     </head>
     <body>
         <c:set var = "user" value = "${requestScope['user']}" />
@@ -23,7 +23,7 @@
         <div class="ui container">
             <div class="ui secondary  menu">
                 <div class="item logo">
-                    <a href="/Practica-de-laboratorio-01"><h2>Book<span>Contact</span></h2></a>
+                    <a href="/Practica-de-laboratorio-01"><h2><span>Agenda</span>Telefonica</h2></a>
                 </div>
 
                 <div class="right menu">
@@ -278,15 +278,8 @@
         </div>
 
         <footer>
-            <div class="icon_footer">
-                <i class="fas fa-chevron-up"></i>
-            </div>
-            <div class="social_foote">
-                <a href="https://www.instagram.com/claudio.mldo" target="_BLANK"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/Claudio.Mldo" target="_BLANK"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://github.com/MClaudio" target="_BLANK"><i class="fab fa-github-square"></i></a>
-            </div>
-            <p>&COPY; 2020 Todos los derechos reservados | Designed By Claudio Maldonado</p>
+            
+            <p>&COPY; Todos los derechos reservados | Designed By Marcelo Durazno</p>
         </footer>
 
 

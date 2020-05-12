@@ -1,76 +1,28 @@
 
 body{
    border-radius: 10em;
-   background: url(fnd.jpg) ;
+   background: url(fnd1.jpg) ;
+   background-size: cover;
    font-family: 'Courier New', Courier, monospace;
-   border-bottom-width: 0.2em;
-   height: 50;
-   left: 50;
+   
+}
+.uno {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+   text-align: center;
+   font-size: 20px;
+   color: white;
 }
 
-.secondary .logo a{
-    height: 45px;
-    text-decoration: none;
-
-}
-.secondary .logo a h2 span{
-    color: #F50057;
+.item {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+   text-align: center;
+   font-size: 10px;
+   color: white;
 }
 
 
-.layout-header{
-    height: 89vh;
-    display: flex;
-    justify-content: space-between;
-}
-.layout-header .column-bg{
-    background-image: url("../img/people_search_red.png");
-    background-size: cover;
-    height: 100%;
-    width: 40%;
-}
 
-.placeholder.segment{
-    width: 70%;
-    margin: 50px auto;
-}
 
-.ui.labeled.icon.button, .ui.labeled.icon.buttons .button{
-    height: 45px;
-}
-
-.ui .content-btns{
-    display: flex;
-    align-items: center;
-}
-
-.layout-header .column-description{
-    
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 75px; 
-}
-
-.layout-header .column-description h1{
-    font-size: 3em;
-}
-
-.layout-header .column-description h1 span{
-    color: #F50057;
-}
-
-.layout-header .column-description div p{
-    font-size: 1.7em;
-    line-height:20px;
-    margin: 10px 0;
-}
-
-.layout-header .column-description .btn-index-register{
-    width: 300px;
-    margin: 20px auto;
-}
 
 .ui.labeled.icon.button, .ui.labeled.icon.buttons .button{
     display: flex;
