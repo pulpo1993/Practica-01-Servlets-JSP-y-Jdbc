@@ -8,8 +8,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/e564244708.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="public/css/style.css" />
-        <link rel="stylesheet" href="public/css/styles.css">
+       
+        <link rel="stylesheet" href="diseño/css/styles.css">
     </head>
     <body>
         <c:set var = "userId" value = "${sessionScope['userID']}" />
@@ -73,79 +73,16 @@
 
 
         <div class="header-contet">
-            <div class=" header-description">
-                <h2>Por que elegirnos?</h2>
-                <p>Ofrecemos almacenamiento de contactos ilimitados para nuestros usuarios para conocer mas sobre nuestros planes empresariales visita los siguientes enlaces.
-                </p>
+            
                 <div class="buttuns-content">
-                    <a href="#">Planes</a>
-                    <a href="#">Almacenamiento</a>
-                    <a href="busqueda?usuario=all">Ver todos los usuarios</a>
+                  
+                    <a href="busqueda?usuario=all">Ver Usuarios</a>
                 </div>
-            </div>
         </div>
-
-        <div class="patners">
-            <div class="uk-container">
-                <h3>Nuestras caracteristicas:</h3>
-
-                <div class="slide">
-                    <div class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </div>
-                    <div class="icon">
-                        <i class="fas fa-download"></i>
-                        <p>Descarga la lista de tus contactos cuando quieras y donde quieras.</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fas fa-users"></i>
-                        <p>Encuentra a las personas u organizacion que buscas y mantente informado.</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fas fa-book"></i>
-                        <p>Manten tus contactos a salvo con nosotros ofrecemos almacenamiento ilimitado.</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fas fa-comments"></i>
-                        <p>Mantense siempre conectado y al dia con la actualizacion de contactos de los usuarios conectados.</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="patners">
-            <div class="uk-container">
-                <h3>Nuestras Opciones:</h3>
-                <div class="icons-retailer">
-                    <div class="icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <div class="icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <div class="icon">
-                        <i class="fas fa-address-book"></i>
-                    </div>
-                    <a href="#">Ver todo</a>
-                </div>
-            </div>
-        </div>
-
-
 
         <footer>
-            <div class="icon_footer">
-                <i class="fas fa-chevron-up"></i>
-            </div>
-            <div class="social_foote">
-                <a href="https://www.instagram.com/claudio.mldo" target="_BLANK"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/Claudio.Mldo" target="_BLANK"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://github.com/MClaudio" target="_BLANK"><i class="fab fa-github-square"></i></a>
-            </div>
-            <p>&COPY; 2020 Todos los derechos reservados | Designed By Claudio Maldonado</p>
+            
+            <p>&COPY;  Todos los derechos reservados | Designed By Marcelo Durazno</p>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>

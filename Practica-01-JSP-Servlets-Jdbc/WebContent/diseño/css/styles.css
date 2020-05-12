@@ -1,6 +1,11 @@
 
 body{
-
+   border-radius: 10em;
+   background: url(fnd.jpg) ;
+   font-family: 'Courier New', Courier, monospace;
+   border-bottom-width: 0.2em;
+   height: 50;
+   left: 50;
 }
 
 .secondary .logo a{
