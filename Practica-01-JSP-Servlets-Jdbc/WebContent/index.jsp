@@ -29,13 +29,13 @@
                     
                     <c:choose>
                         <c:when test="${userId == null}">
-                            <div class="item">
+                            <div class="item1">
                                 <a href="registro" class="ui primary button">Registro</a>
                             </div>
-                            <div class="item">
+                            <div class="item1">
                                 <a href="login" class="ui button">Iniciar Sesion</a> 
                             </div>
-                            <div class="item">
+                            <div class="item1">
                                 <a href="my-agenda" class="ui primary button">Mi perfil</a>
                             </div>
                             
@@ -43,7 +43,7 @@
                        
                     </c:choose>
               
-       <div class="header-contet">
+       <div class="item1">
             
                 <div class="buttuns-content">
                   
