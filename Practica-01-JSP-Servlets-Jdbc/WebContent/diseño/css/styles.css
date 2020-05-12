@@ -1,7 +1,7 @@
 
 body{
    border-radius: 10em;
-   background: url(fnd1.jpg) ;
+   background: url(fnd2.jpg) ;
    background-size: cover;
    font-family: 'Courier New', Courier, monospace;
    
@@ -20,11 +20,7 @@ body{
    color: white;
 }
 
-.item1 {
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
-   font-size: 30px;
-   color: white;
-}
+
 
 
 

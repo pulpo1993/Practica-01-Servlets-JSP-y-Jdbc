@@ -38,7 +38,7 @@ public class MyAgenda extends HttpServlet {
             if (sesion.equals("true")) {
                 //System.out.println("Sesion cerrada de id " + request.getSession().getAttribute("sesionID"));
                 request.getSession().invalidate();
-                response.sendRedirect("/Practica-de-laboratorio-01");
+                response.sendRedirect("/Practica-01-JSP-Servlets-Jdbc");
 
             }
         } else {

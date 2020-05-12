@@ -1,8 +1,4 @@
-<%-- 
-    Document   : my-agenda
-    Created on : 03-may-2020, 10:18:04
-    Author     : claum
---%>
+
 
 <%@page language="java" contentType="text/html" pageEncoding="UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -23,7 +19,7 @@
         <div class="ui container">
             <div class="ui secondary  menu">
                 <div class="item logo">
-                    <a href="/Practica-de-laboratorio-01"><h2><span>Agenda</span>Telefonica</h2></a>
+                    <a href="/Practica-01-JSP-Servlets-Jdbc"><h2><span>Agenda</span>Telefonica</h2></a>
                 </div>
 
                 <div class="right menu">
@@ -41,9 +37,9 @@
                         <div class="item">
                             <a href="my-agenda?logout=true" class="ui button">Cerrar Sesion</a> 
                         </div>
-                        <button type="button" class="ui primary labeled icon button" data-toggle="modal" data-target="#modalInfo">
-                            <i class="user icon"></i> Editar datos
-                        </button>
+                       <!--  <button type="button" class="ui primary labeled icon button" data-toggle="modal" data-target="#modalInfo">
+                              <i class="user icon"></i> Editar datos
+                        </button>-->
                     </div>
                 </div>
             </div>
@@ -57,13 +53,10 @@
                         <div class="ui grid">
                             <h1 class="four wide column">Mis Telefonos</h1>
 
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Buscar en mi agenda" aria-label="Search" required="" name="mi-telefono">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar mi telefono</button>
-                            </form>
+                            
                         </div>
 
-                        <table class="ui compact celled definition table">
+                        <table class=" definition table">
                             <thead class="full-width">
                                 <tr>
                                     <th>#</th>
@@ -95,19 +88,19 @@
                                                             <p>El número ${telefono.numero} se eliminara de tu agenda.</p>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                                                            <a href="editar-telefono?delete=true&idTelefono=${telefono.id}" class="btn btn-danger btn-ok">Eliminar</a>
+                                                            <button type="button" class="" data-dismiss="modal">Cancelar</button>
+                                                            <a href="editar-telefono?delete=true&idTelefono=${telefono.id}" class="">Eliminar</a>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                             </div>
 
-                                            <div class="ui right floated small red labeled icon button" data-toggle="modal" data-target="#confirm-delete${i}" >
+                                            <div class="ui right floated small blue labeled icon button" data-toggle="modal" data-target="#confirm-delete${i}" >
                                                 <i class="trash alternate icon"></i> Eliminar
                                             </div>
-                                            <div class="ui right floated small green labeled icon button" data-toggle="modal" data-target="#exampleModalCenter${i}">
-                                                <i class="edit icon"></i> Editar
+                                            <div class="ui right floated small blue labeled icon button" data-toggle="modal" data-target="#exampleModalCenter${i}">
+                                                <i class=""></i> Editar
                                             </div>
                                         </td>
                                     </tr>
@@ -163,8 +156,8 @@
                                             </c:otherwise>
                                         </c:choose>
                                     <th colspan="4">
-                                        <button type="button" class="ui right floated small primary labeled icon button" data-toggle="modal" data-target="#exampleModalCenter">
-                                            <i class="phone icon"></i> Agregar telefono
+                                        <button type="button" class=" right floated small primary icon button" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class=""></i> Agregar telefono
                                         </button>
                                     </th>
 
@@ -209,7 +202,7 @@
                         <div class="modal-body">
                             <div class="form-group">
                                 <label for="numero">Numero</label>
-                                <input type="text" class="form-control" id="numero" name="numero" required="" placeholder="0985632146" pattern="[0-9]+">
+                                <input type="text" class="form-control" id="numero" name="numero" required="" placeholder="0939002242" pattern="[0-9]+">
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">

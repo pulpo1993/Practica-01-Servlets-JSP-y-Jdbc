@@ -1,8 +1,4 @@
-<%-- 
-    Document   : busqueda
-    Created on : 04-may-2020, 22:01:03
-    Author     : claum
---%>
+
 
 <%@page language="java" contentType="text/html" pageEncoding="UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -17,13 +13,15 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="diseño/css/styles.css">
     </head>
-    <body>
+     <body>
+    
         <c:set var = "users" value = "${requestScope['users']}" />
         <c:set var = "userId" value = "${sessionScope['userID']}" />
+          <div id="fullscreen_bg" class="fullscreen_bg"/>
         <div class="ui container">
             <div class="ui secondary  menu">
                 <div class="item logo">
-                    <a href="/Practica-de-laboratorio-01"><h2><span>Agenda</span>Telefonica</h2></a>
+                    <a href="/Practica-01-JSP-Servlets-Jdbc"><h2><span>AGENDA TELEFONICA</span></h2></a>
                 </div>
 
                 <div class="right menu">
@@ -61,10 +59,14 @@
                 <c:when test="${users.size() > 0}">
                     <table class="table table-hover">
                         <thead>
+                        	<tr>
+                        	<td>Usuarios</td>
+                        	</tr>
                             <tr>
-                                <th scope="col">Contactos</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
                                 <th scope="col">Correo</th>
-                                <th scope="col">Numero de telefono</th>
+                            	<th scope="col">Cedula</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -75,15 +77,18 @@
                                     <td>
                                         <div class="ui middle aligned selection list">
                                             <div class="item">
-                                                <img class="ui avatar image" src="public/img/img.png">
+                                               
                                                 <div class="content">
-                                                    <div class="header">${user.nombre} ${user.apellido}</div>
+                                                    <div class="header">${user.nombre}</div>
                                                 </div>
                                             </div>
 
                                     </td>
+                                    
+                                    <td>${user.apellido}</td>
                                     <td>${user.correo}</td>
-                                    <td>${user.telefonos[0].numero}</td>
+                   					<td>${user.cedula}</td>
+           
                                 </tr>
 
                             <div class="modal fade" id="exampleModal${i}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -91,18 +96,18 @@
                                     <div class="modal-content " style="width: 293px;">
                                         <div class="ui card aling-self-center">
                                             <div class="image">
-                                                <img src="https://semantic-ui.com/images/avatar2/large/matthew.png">
+                                                
                                             </div>
                                             <div class="content">
-                                                <a class="header">${user.nombre} ${user.apellido}</a>
+                                                <a class="header">${user.nombre} ${user.apellido} ${user.cedula}</a>
                                                 <div class="meta">
-                                                   <i class="envelope icon"></i> <a href="mailto:${user.correo}"> ${user.correo}</a>
+                                                   <i class=""></i> <a href="mailto:${user.correo}"> ${user.correo}</a>
                                                 </div>
                                                 <div class="description">
                                                     <c:choose>
                                                         <c:when test="${user.telefonos.size() > 0}">
                                                             <c:forEach var="telefono" items="${user.telefonos}">
-                                                                <p><i class="phone icon"></i> <a href="tel:${telefono.numero}">${telefono.numero}</a>  &#9679; ${telefono.tipo} &#9679; ${telefono.operadora}</p>
+                                                                <p><i class=" &#9678"></i> <a href="tel:${telefono.numero}">${telefono.numero}</a>  &#9678; ${telefono.tipo} &#9678; ${telefono.operadora}</p>
                                                             </c:forEach>
                                                         </c:when>    
                                                         <c:otherwise>
@@ -128,11 +133,18 @@
                 </c:otherwise>
             </c:choose>
         </div>
+        </div>
         <footer>
+            <div class="">
+                <i class="fas fa-chevron-up"></i>
+            </div>
             
-            <p>&COPY; 2020 Todos los derechos reservados | Designed By Marcelo Durazno</p>
+            <p>&COPY; Todos los derechos reservados | Realizado por Marcelo Durazno</p>
         </footer>
 
-        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     </body>
 </html>
